@@ -45,12 +45,6 @@ or rename them separately.
 This one step will: press Play, load the IK controller, and start IK
 following. When you see `"status": "ready"` in the result, it worked.
 
-> Why not open `ik_controller.py` directly? Isaac Sim's Script Editor does
-> not share variables between "run a file" and "the interactive console".
-> If you open `ik_controller.py` on its own, calling `ik_follow_status()`
-> from the console later will fail with `NameError`. `demo_start.py`
-> avoids this problem, so always start from `demo_start.py`.
-
 ### 3. Drag the target
 
 In the viewport, drag `/World/IKTarget` (the small green cube) with the
@@ -147,9 +141,8 @@ measurement.
 
 ---
 
-## What this repo does not include
+**NOTICE**
 
-This is a trimmed release from an internal development project. It keeps
-only what you need to run the demo. Development task logs, reviews,
-agent-workflow files, old debugging scripts, and one-off scene-build
-scripts are not included here.
+> Why not open `ik_controller.py` directly? Isaac Sim's Script Editor does not share variables between "run a file" and "the interactive console".
+> If you open `ik_controller.py` on its own, calling `ik_follow_status()` from the console later will fail with `NameError`. `demo_start.py` avoids this problem, so always start from `demo_start.py`.
+
